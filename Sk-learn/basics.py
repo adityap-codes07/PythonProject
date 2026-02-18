@@ -1,3 +1,3 @@
-import sklearn
+import sklearn as sk
 
-print(sklearn.__version__)
+print(sk.__version__)
