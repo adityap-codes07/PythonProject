@@ -1,13 +1,11 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import re
 from datetime import datetime
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from collections import Counter
 import plotly.graph_objects as go
-import plotly.express as px
+
 
 # ======================================================
 # ADVANCED CONFIG
@@ -320,7 +318,7 @@ st.markdown("""
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     ">
-        🚀 AI-Powered Resume Intelligence Platform
+        🚀 ML-Based Resume Analyzer with TF-IDF & Similarity Matching
     </h1>
     <p style="
         color: #cbd5e1;
@@ -529,7 +527,7 @@ if st.button("🔬 Run Advanced Analysis", use_container_width=True):
                 st.success("All key skills covered!")
 
         # Recommendations
-        section_header("AI-Powered Recommendations", "💡")
+        section_header("ATS Optimization Insights", "💡")
 
         recommendations = []
 
