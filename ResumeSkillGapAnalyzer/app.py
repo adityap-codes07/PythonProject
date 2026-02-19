@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 # ADVANCED CONFIG
 # ======================================================
 st.set_page_config(
-    page_title="AI Resume Analyzer Pro",
+    page_title="ML & TF-IDF Resume Similarity and Skill Gap Analyzer",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -366,7 +366,7 @@ if st.button("🔬 Run Advanced Analysis", use_container_width=True):
     if not job_description or not resume_text:
         st.error("⚠️ Please provide both job description and resume content.")
     else:
-        with st.spinner("🔄 Analyzing resume with AI models..."):
+        with st.spinner("🔄 Applying TF-IDF and similarity models..."):
             # Clean text
             job_clean = clean_text(job_description)
             resume_clean = clean_text(resume_text)
