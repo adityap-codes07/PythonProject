@@ -14,35 +14,26 @@ st.title("ML Resume Analyzer")
 
 TECH_SKILLS = {
     # Programming Languages
-    "python", "java", "javascript", "typescript", "c++", "c#", "ruby", "go",
-    "rust", "swift", "kotlin", "scala", "r", "php", "perl", "bash", "shell",
+    "python", "java", "javascript",  "c++", "ruby", "go","rust", "swift", "kotlin", "r", "shell",
 
     # Web Technologies
-    "html", "css", "react", "angular", "vue", "node", "express", "django",
-    "flask", "fastapi", "spring", "asp.net", "laravel", "rails", "next.js",
+    "html", "css", "react", "angular", "node", "express", "django", "flask", "fastapi", "spring", "next.js",
 
     # Databases
-    "sql", "mysql", "postgresql", "mongodb", "redis", "cassandra", "dynamodb",
-    "oracle", "sql server", "elasticsearch", "neo4j", "sqlite",
+    "sql", "mysql", "postgresql", "mongodb","oracle", "sql server", "elasticsearch", "neo4j", "sqlite",
 
     # Cloud & DevOps
-    "aws", "azure", "gcp", "docker", "kubernetes", "jenkins", "ci/cd",
-    "terraform", "ansible", "git", "github", "gitlab", "circleci",
+    "aws", "azure", "docker", "kubernetes", "jenkins", "ci/cd", "git", "github", "gitlab",
 
     # Data & AI
-    "machine learning", "deep learning", "nlp", "computer vision", "tensorflow",
-    "pytorch", "scikit-learn", "pandas", "numpy", "spark", "hadoop", "kafka",
-    "airflow", "tableau", "power bi", "data science", "statistics",
+    "machine learning", "deep learning", "nlp", "computer vision", "tensorflow","pytorch", "scikit-learn", "pandas", "numpy", "tableau", "power bi", "data science", "statistics",
 
     # Other
-    "rest api", "graphql", "microservices", "agile", "scrum", "jira",
-    "linux", "unix", "windows", "networking", "security", "testing"
+    "rest api", "graphql",  "agile", "scrum", "linux", "unix", "windows", "networking", "security", "testing"
 }
 
 COMMUNICATION_SKILLS = [
-    "communication", "presentation", "documentation", "technical writing",
-    "stakeholder management", "client interaction", "verbal", "written",
-    "public speaking", "reporting", "collaboration", "cross-functional"
+    "communication", "presentation", "documentation", "technical writing","client interaction", "verbal", "written","public speaking", "reporting", "collaboration"
 ]
 
 SOFT_SKILLS = [
