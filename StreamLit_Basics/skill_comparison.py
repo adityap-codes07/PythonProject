@@ -7,34 +7,25 @@ from sklearn.metrics.pairwise import cosine_similarity
 import plotly.graph_objects as go
 
 st.set_page_config(page_title="Resume Analyzer", layout="wide")
-
 st.title("ML Resume Analyzer")
-
 # ================= SKILLS =================
 
 TECH_SKILLS = {
     # Programming Languages
     "python", "java", "javascript",  "c++", "ruby", "go","rust", "swift", "kotlin", "r", "shell",
-
     # Web Technologies
     "html", "css", "react", "angular", "node", "express", "django", "flask", "fastapi", "spring", "next.js",
-
     # Databases
     "sql", "mysql", "postgresql", "mongodb","oracle", "sql server", "elasticsearch", "neo4j", "sqlite",
-
     # Cloud & DevOps
     "aws", "azure", "docker", "kubernetes", "jenkins", "ci/cd", "git", "github", "gitlab",
-
     # Data & AI
     "machine learning", "deep learning", "nlp", "computer vision", "tensorflow","pytorch", "scikit-learn", "pandas", "numpy", "tableau", "power bi", "data science", "statistics",
-
     # Other
     "rest api", "graphql",  "agile", "scrum", "linux", "unix", "windows", "networking", "security", "testing"
 }
 
-COMMUNICATION_SKILLS = [
-    "communication", "presentation", "documentation", "technical writing","client interaction", "verbal", "written","public speaking", "reporting", "collaboration"
-]
+COMMUNICATION_SKILLS = ["communication", "presentation", "documentation", "technical writing","client interaction", "verbal", "written","public speaking", "reporting", "collaboration"]
 
 SOFT_SKILLS = [
     "leadership", "teamwork", "problem solving", "analytical", "critical thinking",
@@ -49,12 +40,7 @@ EXPERIENCE_KEYWORDS = [
 ]
 
 # Industry-specific weights
-WEIGHTS = {
-    "technical": 0.45,
-    "communication": 0.20,
-    "soft_skills": 0.20,
-    "experience": 0.15
-}
+WEIGHTS = {"technical": 0.45, "communication": 0.20, "soft_skills": 0.20, "experience": 0.15}
 
 # ================= HELPERS =================
 
@@ -152,10 +138,7 @@ if st.button("Run Analysis"):
     st.subheader("Missing Skills")
     st.write(missing)
 
-    df = pd.DataFrame({
-        "Category":["Technical","Communication","Soft","Experience"],
-        "Score":[tech,comm,soft,exp]
-    })
+    df = pd.DataFrame({"Category":["Technical","Communication","Soft","Experience"], "Score":[tech,comm,soft,exp]})
 
     st.dataframe(df)
 
